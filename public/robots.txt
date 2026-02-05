@@ -1,0 +1,23 @@
+# Impulso Digital - Robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://impulsodigital.dev/sitemap.xml
+
+# Bloquear arquivos desnecessários (se houver)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /node_modules/
+
+# Permitir crawlers específicos
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Otimizações
+Crawl-delay: 0
