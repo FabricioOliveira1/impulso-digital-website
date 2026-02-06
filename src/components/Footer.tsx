@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <span className="text-lg font-bold text-gray-900 dark:text-white">Impulso Dev</span>
         </div>
         <p className="text-gray-500 dark:text-gray-400 text-sm text-center">
-          © 2024 Impulso Dev Soluções Digitais. Todos os direitos reservados.
+          © 2026 Impulso Digital. Todos os direitos reservados.
         </p>
         <div className="flex gap-6">
           <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">LinkedIn</a>

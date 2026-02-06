@@ -2,7 +2,7 @@
 import React from 'react';
 
 const steps = [
-  { number: 1, title: 'Diagnóstico', description: 'Analisamos seu negócio e identificamos os gargalos.' },
+  { number: 1, title: 'Diagnóstico', description: 'Analisamos seu negócio e identificamos as deficiências tecnológicas.' },
   { number: 2, title: 'Solução', description: 'Implementamos a tecnologia necessária sem burocracia.' },
   { number: 3, title: 'Acompanhamento', description: 'Garantimos que tudo funcione e cresça com você.' },
 ];

@@ -13,8 +13,8 @@ const services = [
   },
   {
     icon: 'dashboard_customize',
-    title: 'Organização Digital',
-    description: 'Integramos suas ferramentas e otimizamos processos tecnológicos para eliminar o retrabalho e o caos digital.',
+    title: 'Diagnóstico de Organização Digital',
+    description: 'Analisamos e otimizamos sua estrutura tecnológia para eliminar o retrabalho e o caos dos processos.',
   },
 ];
 
