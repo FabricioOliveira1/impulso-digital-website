@@ -5,7 +5,6 @@ import Hero from './components/Hero';
 import Services from './components/Services';
 import TargetAudience from './components/TargetAudience';
 import HowItWorks from './components/HowItWorks';
-import WhyChooseUs from './components/WhyChooseUs';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import FloatingActionButton from './components/FloatingActionButton';
@@ -36,7 +35,6 @@ const App: React.FC = () => {
         <Services />
         <TargetAudience />
         <HowItWorks />
-        <WhyChooseUs />
         <ContactForm />
       </main>
       <Footer />
