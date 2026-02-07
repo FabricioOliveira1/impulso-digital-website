@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactForm: React.FC = () => {
   const [state, handleSubmit] = useForm("xwvnendy"); // ⚠️ TROCAR AQUI!
@@ -149,7 +150,7 @@ const ContactForm: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="material-symbols-outlined">chat</span>
+            <FaWhatsapp size={32}/>
             Conversar via WhatsApp
           </a>
         </div>

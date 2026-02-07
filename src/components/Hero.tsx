@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
             Soluções Tecnológicas Modernas
           </div>
           <h1 className="text-4xl md:text-6xl font-black leading-[1.1] text-gray-900 dark:text-white">
-            Sua tecnologia organizada para o seu negócio <span className="text-primary">crescer</span>
+            Tecnologia simples para organizar e fazer seu negócio <span className="text-primary">funcionar</span> melhor. 
           </h1>
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
             Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no que realmente importa: o crescimento e a gestão do seu sonho.
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 p-4 overflow-hidden border border-gray-200 dark:border-gray-800">
             <div
               className="w-full h-full rounded-xl bg-center bg-cover shadow-2xl"
-              style={{ backgroundImage: "url('/images/hero-image.jpg')" }}
+              style={{ backgroundImage: "url('/images/hero-image.png')" }}
               aria-label="Professional office workspace with high end technology setup"
             ></div>
           </div>

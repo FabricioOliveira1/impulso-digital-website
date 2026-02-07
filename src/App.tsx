@@ -37,7 +37,7 @@ const App: React.FC = () => {
         <HowItWorks />
         <ContactForm />
       </main>
-      <Footer />
+      <Footer theme={theme}/>
       <FloatingActionButton />
     </div>
   );
