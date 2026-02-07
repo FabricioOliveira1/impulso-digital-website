@@ -14,7 +14,7 @@ const services = [
   {
     icon: 'dashboard_customize',
     title: 'Diagnóstico de Organização Digital',
-    description: 'Analisamos e otimizamos sua estrutura tecnológia para eliminar o retrabalho e o caos dos processos.',
+    description: 'Analisamos sua presença digital e processos internos para identificar oportunidades de melhoria ou crescimento online.',
   },
 ];
 
