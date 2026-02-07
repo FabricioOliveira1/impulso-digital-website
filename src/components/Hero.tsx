@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 p-4 overflow-hidden border border-gray-200 dark:border-gray-800">
             <div
               className="w-full h-full rounded-xl bg-center bg-cover shadow-2xl"
-              style={{ backgroundImage: "url('/images/hero-image.png')" }}
+              style={{ backgroundImage: "url('/images/hero-image.webp')" }}
               aria-label="Professional office workspace with high end technology setup"
             ></div>
           </div>

@@ -1,60 +1,163 @@
 <!DOCTYPE html>
 <html lang="pt-BR" class="dark">
 <head>
-    <!-- Básico -->
+    <!-- ========== BÁSICO ========== -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO Principal -->
+    <!-- ========== PRECONNECT (Deve vir ANTES das fontes) ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    
+    <!-- ========== SEO PRINCIPAL ========== -->
     <title>Impulso Digital | Tecnologia para Pequenos Negócios</title>
     <meta name="description" content="Impulso Digital - Soluções tecnológicas sob medida para pequenos negócios. Sites, sistemas e organização digital para empresas crescerem." />
     <meta name="keywords" content="desenvolvimento web, sites profissionais, sistemas personalizados, tecnologia para empresas, consultoria tecnológica, transformação digital, sites responsivos, aplicativos web" />
     <meta name="author" content="Impulso Digital" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://impulsodigital.dev" />
+    <link rel="canonical" href="https://impulsodigital.dev.br" />
     
-    <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+    <!-- ========== OPEN GRAPH ========== -->
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:site_name" content="Impulso Digital" />
     <meta property="og:title" content="Impulso Digital | Tecnologia para Pequenos Negócios" />
     <meta property="og:description" content="Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no crescimento e gestão do seu sonho." />
-    <meta property="og:url" content="https://impulsodigital.dev" />
-    <meta property="og:image" content="https://impulsodigital.dev/og-image.png" />
+    <meta property="og:url" content="https://impulsodigital.dev.br" />
+    <meta property="og:image" content="https://impulsodigital.dev.br/og-image.png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Impulso Digital - Tecnologia para Pequenos Negócios" />
     
-    <!-- Twitter Card -->
+    <!-- ========== TWITTER CARD ========== -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Impulso Digital | Tecnologia para Pequenos Negócios" />
     <meta name="twitter:description" content="Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no crescimento." />
-    <meta name="twitter:image" content="https://impulsodigital.dev/twitter-image.png" />
+    <meta name="twitter:image" content="https://impulsodigital.dev.br/twitter-image.png" />
     <meta name="twitter:image:alt" content="Impulso Digital - Tecnologia para Pequenos Negócios" />
     
-    <!-- Favicon (múltiplos tamanhos) -->
+    <!-- ========== FAVICONS ========== -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="icon" type="image/png" sizes="16x16" href="/images/impulso-digital-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/images/impulso-digital-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/impulso-digital-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <meta name="theme-color" content="#3B82F6" />
     
-    <!-- Preconnect para performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- ========== CRITICAL CSS INLINE ========== -->
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Fonte fallback enquanto Manrope carrega */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        /* Prevenir flash de conteúdo sem estilo */
+        #root {
+            min-height: 100vh;
+        }
+        
+        /* Material Icons inline (enquanto carrega) */
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            font-feature-settings: 'liga';
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        /* Loading screen (aparece enquanto React carrega) */
+        .app-loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffffff;
+        }
+        
+        .dark .app-loading {
+            background: #0f1419;
+        }
+        
+        .spinner {
+            width: 48px;
+            height: 48px;
+            border: 4px solid #e5e7eb;
+            border-top-color: #3B82F6;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
     
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <!-- ========== FONTES OTIMIZADAS (Não-bloqueantes) ========== -->
+    <!-- Apenas pesos que você realmente usa -->
+    <link 
+        rel="preload" 
+        as="style" 
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" 
+        media="print" 
+        onload="this.media='all';this.onload=null;"
+    />
     
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Material Icons otimizado -->
+    <link 
+        rel="preload" 
+        as="style" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap"
+    />
+    <link 
+        rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap" 
+        media="print" 
+        onload="this.media='all';this.onload=null;"
+    />
+    
+    <!-- Fallback para browsers sem JavaScript -->
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap" rel="stylesheet">
+    </noscript>
+    
+    <!-- ========== STRUCTURED DATA ========== -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "Impulso Digital",
       "description": "Soluções tecnológicas para pequenos negócios",
-      "url": "https://impulsodigital.dev",
-      "logo": "https://impulsodigital.dev/logo.png",
+      "url": "https://impulsodigital.dev.br",
+      "logo": "https://impulsodigital.dev.br/logo.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "telephone": "+55-11-99999-9999",
@@ -67,19 +170,17 @@
       ]
     }
     </script>
-    
-    <style>
-        body {
-            font-family: 'Manrope', sans-serif;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
-<link rel="stylesheet" href="/index.css">
 </head>
+
 <body class="bg-background-light dark:bg-background-dark text-[#111418] dark:text-gray-200 font-display transition-colors duration-300">
-    <div id="root"></div>
-<script type="module" src="/src/index.tsx"></script>
+    <!-- Loading inicial -->
+    <div id="root">
+        <div class="app-loading">
+            <div class="spinner"></div>
+        </div>
+    </div>
+    
+    <!-- Script principal (module = async por padrão) -->
+    <script type="module" src="/src/index.tsx"></script>
 </body>
 </html>
