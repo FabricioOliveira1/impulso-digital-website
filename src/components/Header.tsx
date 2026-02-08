@@ -12,13 +12,13 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         <a href="/" className="flex items-center">
         {theme === 'dark' ? (
           <img 
-            src="/images/impulso-digital-logo-dark.png" 
+            src="/images/impulso-digital-logo-dark.webp" 
             alt="Impulso Digital" 
             className="h-16 lg:h-20 object-contain"
           />
         ) : (
           <img 
-            src="/images/impulso-digital-logo-light.png" 
+            src="/images/impulso-digital-logo-light.webp" 
             alt="Impulso Digital" 
             className="h-16 lg:h-20 object-contain"
           />

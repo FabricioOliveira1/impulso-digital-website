@@ -10,13 +10,13 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         {theme === 'dark' ? (
           <img 
-            src="/images/impulso-digital-logo-dark.png" 
+            src="/images/impulso-digital-logo-dark.webp" 
             alt="Impulso Digital" 
             className="h-16 lg:h-20 object-contain"
           />
         ) : (
           <img 
-            src="/images/impulso-digital-logo-light.png" 
+            src="/images/impulso-digital-logo-light.webp" 
             alt="Impulso Digital" 
             className="h-16 lg:h-20 object-contain"
           />
