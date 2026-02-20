@@ -146,7 +146,7 @@ const ContactForm: React.FC = () => {
           <p className="text-gray-500 dark:text-gray-400">Prefere um contato mais rápido?</p>
           
            <a className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg"
-            href="https://wa.me/+5521997592837?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20tecnologia."
+            href="https://wa.me/+5521992334766?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20tecnologia."
             target="_blank"
             rel="noopener noreferrer"
           >
