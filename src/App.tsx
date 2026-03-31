@@ -1,9 +1,11 @@
-
 import React, { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import Services from './components/Services';
 import TargetAudience from './components/TargetAudience';
+import Services from './components/Services';
+import Products from './components/Products';
+import Portfolio from './components/Portfolio';
+import Differentials from './components/Differentials';
 import HowItWorks from './components/HowItWorks';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -32,12 +34,15 @@ const App: React.FC = () => {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <main>
         <Hero />
-        <Services />
         <TargetAudience />
+        <Services />
+        <Products />
+        <Portfolio />
+        <Differentials />
         <HowItWorks />
         <ContactForm />
       </main>
-      <Footer theme={theme}/>
+      <Footer theme={theme} />
       <FloatingActionButton />
     </div>
   );

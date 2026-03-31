@@ -1,37 +1,60 @@
 import React from 'react';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const Hero: React.FC = () => {
   return (
-    <section className="py-16 md:py-24 px-6">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div className="flex flex-col gap-8">
-          <div className="inline-flex items-center px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
-            Soluções Tecnológicas Modernas
-          </div>
-          <h1 className="text-4xl md:text-6xl font-black leading-[1.1] text-gray-900 dark:text-white">
-            Tecnologia simples para organizar e fazer seu negócio <span className="text-primary">funcionar</span> melhor. 
-          </h1>
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
-            Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no que realmente importa: o crescimento e a gestão do seu sonho.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a href='#contato' className="bg-primary text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-primary/20 hover:scale-[1.02] transition-transform">
-              Começar Agora
-            </a>
-{/*             <button className="border border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-xl text-lg font-bold hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-              Ver Portfólio
-            </button> */}
-          </div>
+    <section className="py-20 md:py-32 px-6">
+      <div className="max-w-5xl mx-auto text-center flex flex-col items-center gap-8">
+
+        <div className="inline-flex items-center px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-widest">
+          Sites · Sistemas · Automação
         </div>
-        <div className="relative">
-          <div className="aspect-square w-full rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 p-4 overflow-hidden border border-gray-200 dark:border-gray-800">
-            <div
-              className="w-full h-full rounded-xl bg-center bg-cover shadow-2xl"
-              style={{ backgroundImage: "url('/images/hero-image.webp')" }}
-              aria-label="Professional office workspace with high end technology setup"
-            ></div>
-          </div>
+
+        <h1 className="text-4xl md:text-6xl font-black leading-[1.1] text-gray-900 dark:text-white max-w-4xl">
+          Desenvolvimento de sites e sistemas para o{' '}
+          <span className="text-primary">seu negócio</span>
+        </h1>
+
+        <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed">
+          Pare de depender só do Instagram. Crie uma estrutura profissional para{' '}
+          <strong className="text-gray-800 dark:text-gray-200">atender, vender e organizar</strong>{' '}
+          seu negócio.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-4 mt-4">
+          <a
+            href="https://wa.me/+5521992334766?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:scale-[1.02] transition-transform"
+          >
+            <FaWhatsapp size={22} />
+            Falar no WhatsApp
+          </a>
+          <a
+            href="#portfolio"
+            className="flex items-center justify-center gap-2 border-2 border-gray-300 dark:border-gray-700 text-gray-700 dark:text-gray-300 px-8 py-4 rounded-xl text-lg font-bold hover:border-primary hover:text-primary dark:hover:border-primary dark:hover:text-primary transition-colors"
+          >
+            <span className="material-symbols-outlined text-xl">grid_view</span>
+            Ver projetos
+          </a>
         </div>
+
+        <div className="flex flex-wrap justify-center gap-6 mt-6 text-sm text-gray-500 dark:text-gray-500">
+          <span className="flex items-center gap-1.5">
+            <span className="material-symbols-outlined text-base text-primary">check_circle</span>
+            Sem termos técnicos
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="material-symbols-outlined text-base text-primary">check_circle</span>
+            Orçamento sem compromisso
+          </span>
+          <span className="flex items-center gap-1.5">
+            <span className="material-symbols-outlined text-base text-primary">check_circle</span>
+            Entrega rápida
+          </span>
+        </div>
+
       </div>
     </section>
   );

@@ -24,7 +24,7 @@ const ContactForm: React.FC = () => {
             </div>
             <h2 className="text-4xl font-black text-gray-900 dark:text-white mb-4">Mensagem Enviada!</h2>
             <p className="text-gray-600 dark:text-gray-400 text-lg mb-8">
-              Obrigado pelo contato! Vamos analisar sua solicitação e retornar em até 24 horas.
+              Obrigado pelo contato! Vou analisar sua situação e te retornar em até 24 horas.
             </p>
             <button 
               onClick={() => window.location.reload()} 
@@ -42,9 +42,12 @@ const ContactForm: React.FC = () => {
     <section className="py-24 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800" id="contato">
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-black text-gray-900 dark:text-white mb-4">Vamos Impulsionar?</h2>
-          <p className="text-gray-600 dark:text-gray-400 text-lg">
-            Preencha o formulário abaixo e receba um diagnóstico gratuito da sua tecnologia atual.
+          <p className="text-primary font-bold uppercase tracking-widest text-sm mb-3">Contato</p>
+          <h2 className="text-4xl font-black text-gray-900 dark:text-white mb-4">
+            Fale comigo e vamos entender seu negócio
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 text-lg max-w-xl mx-auto">
+            Me conta o que você precisa. Respondo em até 24 horas e sem compromisso.
           </p>
         </div>
 
@@ -100,14 +103,14 @@ const ContactForm: React.FC = () => {
           {/* Campo: Mensagem */}
           <div className="flex flex-col gap-2">
             <label htmlFor="message" className="text-sm font-bold text-gray-700 dark:text-gray-300">
-              Como podemos ajudar? *
+              Me conta sobre o seu negócio *
             </label>
             <textarea
               id="message"
               name="message"
               required
               className="rounded-lg border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-500 dark:text-gray-200 focus:ring-2 focus:ring-primary focus:border-primary px-4 py-3 transition-all"
-              placeholder="Descreva brevemente sua necessidade..."
+              placeholder="O que você vende, qual é o seu desafio hoje e o que você precisa..."
               rows={4}
             ></textarea>
             <ValidationError prefix="Mensagem" field="message" errors={state.errors} />
