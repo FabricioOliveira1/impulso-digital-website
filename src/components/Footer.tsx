@@ -26,7 +26,7 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
         </p>
         <div className="flex gap-6">
           <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="https://www.linkedin.com/in/fabricioliveira-1/">LinkedIn</a>
-          <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">Instagram</a>
+          <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="https://www.instagram.com/impulsodigitaldev/">Instagram</a>
         </div>
       </div>
     </footer>
