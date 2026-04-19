@@ -74,6 +74,10 @@ const Portfolio: React.FC = () => {
                   src={item.image}
                   alt={`Screenshot do projeto ${item.name}`}
                   className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
+                  loading="lazy"
+                  width={600}
+                  height={192}
+                  decoding="async"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div className="absolute top-3 right-3">

@@ -9,16 +9,22 @@ const Footer: React.FC<FooterProps> = ({ theme }) => {
     <footer className="bg-gray-50 dark:bg-background-dark py-12 border-t border-gray-200 dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
         {theme === 'dark' ? (
-          <img 
-            src="/images/impulso-digital-logo-dark.png" 
-            alt="Impulso Digital" 
+          <img
+            src="/images/impulso-digital-logo-dark.webp"
+            alt="Impulso Digital"
             className="h-16 lg:h-20 object-contain"
+            width={200}
+            height={80}
+            loading="lazy"
           />
         ) : (
-          <img 
-            src="/images/impulso-digital-logo-light.png" 
-            alt="Impulso Digital" 
+          <img
+            src="/images/impulso-digital-logo-light.webp"
+            alt="Impulso Digital"
             className="h-16 lg:h-20 object-contain"
+            width={200}
+            height={80}
+            loading="lazy"
           />
         )}
         <p className="text-gray-500 dark:text-gray-400 text-sm text-center">
