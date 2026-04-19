@@ -4,7 +4,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://impulsodigital.dev/sitemap.xml
+Sitemap: https://impulsodigital.dev.br/sitemap.xml
 
 # Bloquear arquivos desnecessários (se houver)
 Disallow: /api/
