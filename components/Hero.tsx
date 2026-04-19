@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const Hero: React.FC = () => {
   return (
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
+export default Hero

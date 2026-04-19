@@ -1,31 +1,13 @@
-import React from 'react';
+import React from 'react'
 
 const problems = [
-  {
-    icon: 'chat_bubble',
-    text: 'Responde tudo no WhatsApp e perde mensagens importantes?',
-  },
-  {
-    icon: 'help',
-    text: 'Seu cliente não entende o que você vende de primeira?',
-  },
-  {
-    icon: 'visibility_off',
-    text: 'Depende só do Instagram para aparecer e atrair clientes?',
-  },
-  {
-    icon: 'sentiment_dissatisfied',
-    text: 'Perde clientes porque não tem um lugar fixo para mostrar seu trabalho?',
-  },
-  {
-    icon: 'schedule',
-    text: 'Gasta horas em tarefas que poderiam ser automáticas?',
-  },
-  {
-    icon: 'trending_down',
-    text: 'Sente que seu negócio não transmite profissionalismo suficiente?',
-  },
-];
+  { icon: 'chat_bubble', text: 'Responde tudo no WhatsApp e perde mensagens importantes?' },
+  { icon: 'help', text: 'Seu cliente não entende o que você vende de primeira?' },
+  { icon: 'visibility_off', text: 'Depende só do Instagram para aparecer e atrair clientes?' },
+  { icon: 'sentiment_dissatisfied', text: 'Perde clientes porque não tem um lugar fixo para mostrar seu trabalho?' },
+  { icon: 'schedule', text: 'Gasta horas em tarefas que poderiam ser automáticas?' },
+  { icon: 'trending_down', text: 'Sente que seu negócio não transmite profissionalismo suficiente?' },
+]
 
 const TargetAudience: React.FC = () => {
   return (
@@ -70,7 +52,7 @@ const TargetAudience: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default TargetAudience;
+export default TargetAudience

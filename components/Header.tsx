@@ -1,36 +1,36 @@
-import React from 'react';
+'use client'
 
-interface HeaderProps {
-  theme: 'light' | 'dark';
-  toggleTheme: () => void;
-}
+import React, { useState, useEffect } from 'react'
+import Image from 'next/image'
 
-const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
+const Header: React.FC = () => {
+  const [theme, setTheme] = useState<'light' | 'dark'>('dark')
+
+  useEffect(() => {
+    const root = window.document.documentElement
+    if (theme === 'dark') {
+      root.classList.add('dark')
+    } else {
+      root.classList.remove('dark')
+    }
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prev => prev === 'light' ? 'dark' : 'light')
+  }
+
   return (
     <header className="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-[#dbe0e6] dark:border-gray-800">
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         <a href="/" className="flex items-center">
-          {theme === 'dark' ? (
-            <img
-              src="/images/impulso-digital-logo-dark.webp"
-              alt="Impulso Digital"
-              className="h-16 lg:h-20 object-contain"
-              width={200}
-              height={80}
-              loading="eager"
-              fetchPriority="high"
-            />
-          ) : (
-            <img
-              src="/images/impulso-digital-logo-light.webp"
-              alt="Impulso Digital"
-              className="h-16 lg:h-20 object-contain"
-              width={200}
-              height={80}
-              loading="eager"
-              fetchPriority="high"
-            />
-          )}
+          <Image
+            src={theme === 'dark' ? '/images/impulso-digital-logo-dark.webp' : '/images/impulso-digital-logo-light.webp'}
+            alt="Impulso Digital"
+            className="h-16 lg:h-20 w-auto object-contain"
+            width={200}
+            height={80}
+            priority
+          />
         </a>
 
         <nav className="hidden md:flex items-center gap-10">
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

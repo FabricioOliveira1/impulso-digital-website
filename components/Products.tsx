@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const products = [
   {
@@ -71,7 +71,7 @@ const products = [
       'Painel administrativo',
       'Automação de processos',
       'Integração com a operação atual',
-      'Aplicativos e soluções mobile'
+      'Aplicativos e soluções mobile',
     ],
     results: [
       'Organização interna',
@@ -82,11 +82,11 @@ const products = [
     highlight: false,
     cta: 'Solicitar orçamento',
   },
-];
+]
 
 const Divider: React.FC<{ highlight: boolean }> = ({ highlight }) => (
   <div className={`my-5 h-px w-full ${highlight ? 'bg-white/20' : 'bg-gray-200 dark:bg-gray-700'}`} />
-);
+)
 
 const Products: React.FC = () => {
   return (
@@ -119,7 +119,6 @@ const Products: React.FC = () => {
                 </div>
               )}
 
-              {/* Número decorativo */}
               <div className="mb-4">
                 <span
                   className={`text-5xl font-black opacity-20 leading-none ${
@@ -130,14 +129,12 @@ const Products: React.FC = () => {
                 </span>
               </div>
 
-              {/* Tag */}
               {!product.highlight && (
                 <span className="inline-block mb-2 text-xs font-bold text-primary uppercase tracking-wider">
                   {product.tag}
                 </span>
               )}
 
-              {/* Título */}
               <h3
                 className={`text-2xl font-black mb-3 ${
                   product.highlight ? 'text-white' : 'text-gray-900 dark:text-white'
@@ -146,7 +143,6 @@ const Products: React.FC = () => {
                 {product.title}
               </h3>
 
-              {/* Descrição */}
               <p
                 className={`text-sm leading-relaxed ${
                   product.highlight ? 'text-white/80' : 'text-gray-500 dark:text-gray-400'
@@ -157,7 +153,6 @@ const Products: React.FC = () => {
 
               <Divider highlight={product.highlight} />
 
-              {/* O que inclui */}
               <div className="mb-4 flex-1">
                 <p className={`text-xs font-bold uppercase tracking-wider mb-3 ${product.highlight ? 'text-white/60' : 'text-gray-400 dark:text-gray-500'}`}>
                   O que inclui
@@ -180,7 +175,6 @@ const Products: React.FC = () => {
                 </ul>
               </div>
 
-              {/* Resultado */}
               {product.results && product.results.length > 0 && (
                 <>
                   <Divider highlight={product.highlight} />
@@ -210,7 +204,6 @@ const Products: React.FC = () => {
 
               <Divider highlight={product.highlight} />
 
-              {/* Preço */}
               <div className="mb-6">
                 <p className={`text-xs font-bold uppercase tracking-wider mb-1 ${product.highlight ? 'text-white/60' : 'text-gray-400 dark:text-gray-500'}`}>
                   Investimento
@@ -224,7 +217,6 @@ const Products: React.FC = () => {
                 </p>
               </div>
 
-              {/* CTA */}
               <a
                 href={`https://wa.me/+5521992334766?text=Ol%C3%A1!%20Tenho%20interesse%20no%20plano%20${encodeURIComponent(product.title)}.`}
                 target="_blank"
@@ -247,7 +239,7 @@ const Products: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Products;
+export default Products

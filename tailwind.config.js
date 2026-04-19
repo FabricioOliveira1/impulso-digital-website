@@ -1,9 +1,8 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   darkMode: 'class',
   theme: {
@@ -14,7 +13,7 @@ export default {
         "background-dark": "#101922",
       },
       fontFamily: {
-        "display": ["Manrope", "sans-serif"]
+        "display": ["var(--font-manrope)", "sans-serif"]
       },
       borderRadius: {
         "DEFAULT": "0.25rem",
