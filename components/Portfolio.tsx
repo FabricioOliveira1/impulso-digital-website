@@ -1,4 +1,5 @@
-import React from 'react';
+import React from 'react'
+import Image from 'next/image'
 
 const cases = [
   {
@@ -45,7 +46,7 @@ const cases = [
     result: 'Um canal de vendas próprio, fora do Instagram, que organiza os pedidos e facilita a compra pelo cliente.',
     link: 'https://doce-encanto-site-six.vercel.app/',
   },
-];
+]
 
 const Portfolio: React.FC = () => {
   return (
@@ -68,16 +69,13 @@ const Portfolio: React.FC = () => {
               key={index}
               className={`rounded-2xl border bg-white dark:bg-gray-900 overflow-hidden flex flex-col ${item.accentBorder}`}
             >
-              {/* Capa com screenshot */}
               <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
-                <img
+                <Image
                   src={item.image}
                   alt={`Screenshot do projeto ${item.name}`}
-                  className="w-full h-full object-cover object-top transition-transform duration-500 hover:scale-105"
-                  loading="lazy"
-                  width={600}
-                  height={192}
-                  decoding="async"
+                  className="object-cover object-top transition-transform duration-500 hover:scale-105"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
                 <div className="absolute top-3 right-3">
@@ -91,7 +89,6 @@ const Portfolio: React.FC = () => {
                 </div>
               </div>
 
-              {/* Conteúdo */}
               <div className="p-7 flex flex-col gap-5 flex-1">
                 <div className="flex flex-col gap-4">
                   <div>
@@ -108,7 +105,6 @@ const Portfolio: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Link do projeto */}
                 <a
                   href={item.link}
                   target="_blank"
@@ -137,7 +133,7 @@ const Portfolio: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

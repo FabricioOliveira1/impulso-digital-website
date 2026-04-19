@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const solutions = [
   {
@@ -19,7 +19,7 @@ const solutions = [
     description:
       'Eliminamos tarefas manuais e repetitivas para que você atenda mais, gaste menos tempo operacional e foque em crescer.',
   },
-];
+]
 
 const Services: React.FC = () => {
   return (
@@ -51,7 +51,7 @@ const Services: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Services;
+export default Services

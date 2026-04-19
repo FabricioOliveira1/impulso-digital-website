@@ -1,5 +1,5 @@
-import React from 'react';
-import { FaWhatsapp } from 'react-icons/fa';
+import React from 'react'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const differentials = [
   {
@@ -26,7 +26,7 @@ const differentials = [
     description:
       'A entrega não é o fim. Ficamos disponíveis para dúvidas, ajustes e evoluções. Seu negócio cresce, e seu sistema cresce junto.',
   },
-];
+]
 
 const Differentials: React.FC = () => {
   return (
@@ -70,7 +70,7 @@ const Differentials: React.FC = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Differentials;
+export default Differentials

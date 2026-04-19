@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const steps = [
   {
@@ -16,7 +16,7 @@ const steps = [
     title: 'Entregamos e damos suporte',
     description: 'Seu projeto vai ao ar e você não fica sozinho. Estamos disponíveis para ajustes e evoluções.',
   },
-];
+]
 
 const HowItWorks: React.FC = () => {
   return (
@@ -49,7 +49,7 @@ const HowItWorks: React.FC = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default HowItWorks;
+export default HowItWorks

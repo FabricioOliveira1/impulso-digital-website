@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
-import { useForm, ValidationError } from '@formspree/react';
-import { FaWhatsapp } from 'react-icons/fa';
+'use client'
+
+import React, { useState } from 'react'
+import { useForm, ValidationError } from '@formspree/react'
+import { FaWhatsapp } from 'react-icons/fa'
 
 const ContactForm: React.FC = () => {
-  const [state, handleSubmit] = useForm("xwvnendy"); // ⚠️ TROCAR AQUI!
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [state, handleSubmit] = useForm("xwvnendy")
+  const [isSubmitting, setIsSubmitting] = useState(false)
 
-  // Função customizada para adicionar loading
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    setIsSubmitting(true);
-    await handleSubmit(e);
-    setIsSubmitting(false);
-  };
+    setIsSubmitting(true)
+    await handleSubmit(e)
+    setIsSubmitting(false)
+  }
 
-  // Se o formulário foi enviado com sucesso
   if (state.succeeded) {
     return (
       <section className="py-24 bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800" id="contato">
@@ -26,8 +26,8 @@ const ContactForm: React.FC = () => {
             <p className="text-gray-600 dark:text-gray-400 text-lg mb-8">
               Obrigado pelo contato! Vou analisar sua situação e te retornar em até 24 horas.
             </p>
-            <button 
-              onClick={() => window.location.reload()} 
+            <button
+              onClick={() => window.location.reload()}
               className="bg-primary text-white px-8 py-3 rounded-xl font-bold hover:bg-primary/90 transition-all"
             >
               Enviar outra mensagem
@@ -35,7 +35,7 @@ const ContactForm: React.FC = () => {
           </div>
         </div>
       </section>
-    );
+    )
   }
 
   return (
@@ -53,7 +53,6 @@ const ContactForm: React.FC = () => {
 
         <form className="space-y-6" onSubmit={onSubmit}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* Campo: Nome */}
             <div className="flex flex-col gap-2">
               <label htmlFor="name" className="text-sm font-bold text-gray-700 dark:text-gray-300">
                 Seu Nome *
@@ -69,7 +68,6 @@ const ContactForm: React.FC = () => {
               <ValidationError prefix="Nome" field="name" errors={state.errors} />
             </div>
 
-            {/* Campo: Email */}
             <div className="flex flex-col gap-2">
               <label htmlFor="email" className="text-sm font-bold text-gray-700 dark:text-gray-300">
                 Seu E-mail Profissional *
@@ -86,7 +84,6 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          {/* Campo: Telefone (Opcional) */}
           <div className="flex flex-col gap-2">
             <label htmlFor="phone" className="text-sm font-bold text-gray-700 dark:text-gray-300">
               Telefone / WhatsApp (Opcional)
@@ -100,7 +97,6 @@ const ContactForm: React.FC = () => {
             />
           </div>
 
-          {/* Campo: Mensagem */}
           <div className="flex flex-col gap-2">
             <label htmlFor="message" className="text-sm font-bold text-gray-700 dark:text-gray-300">
               Me conta sobre o seu negócio *
@@ -112,11 +108,10 @@ const ContactForm: React.FC = () => {
               className="rounded-lg border border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:placeholder-gray-500 dark:text-gray-200 focus:ring-2 focus:ring-primary focus:border-primary px-4 py-3 transition-all"
               placeholder="O que você vende, qual é o seu desafio hoje e o que você precisa..."
               rows={4}
-            ></textarea>
+            />
             <ValidationError prefix="Mensagem" field="message" errors={state.errors} />
           </div>
 
-          {/* Botão de Envio */}
           <button
             type="submit"
             disabled={isSubmitting || state.submitting}
@@ -135,7 +130,6 @@ const ContactForm: React.FC = () => {
             )}
           </button>
 
-          {/* Mensagem de erro geral */}
           {state.errors && Object.keys(state.errors).length > 0 && (
             <div className="bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-lg p-4 text-red-700 dark:text-red-400">
               <p className="font-bold">Ops! Algo deu errado.</p>
@@ -144,22 +138,21 @@ const ContactForm: React.FC = () => {
           )}
         </form>
 
-        {/* Contato Alternativo - WhatsApp */}
         <div className="mt-12 flex flex-col items-center gap-4">
           <p className="text-gray-500 dark:text-gray-400">Prefere um contato mais rápido?</p>
-          
-           <a className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg"
+          <a
+            className="flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-bold hover:scale-105 transition-transform shadow-lg"
             href="https://wa.me/+5521992334766?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20conversar%20sobre%20tecnologia."
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaWhatsapp size={32}/>
+            <FaWhatsapp size={32} />
             Conversar via WhatsApp
           </a>
         </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default ContactForm;
+export default ContactForm
