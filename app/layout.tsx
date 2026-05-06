@@ -11,9 +11,23 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'Impulso Digital | Tecnologia para Pequenos Negócios',
-  description: 'Impulso Digital - Soluções tecnológicas sob medida para pequenos negócios. Sites, sistemas e organização digital para empresas crescerem.',
-  keywords: ['desenvolvimento web', 'sites profissionais', 'sistemas personalizados', 'tecnologia para empresas', 'consultoria tecnológica', 'transformação digital', 'sites responsivos', 'aplicativos web'],
+  title: 'Criação de Sites para Empresas no Rio de Janeiro | Impulso Digital',
+  description: 'Agência de criação de sites e sistemas para pequenos negócios no Rio de Janeiro. Landing pages, sites completos e automação de processos. Atendemos todo o Brasil. Solicite um orçamento.',
+  keywords: [
+    'criação de sites',
+    'desenvolvimento de sites',
+    'criação de sites Rio de Janeiro',
+    'desenvolvimento de sites Rio de Janeiro',
+    'agência digital Rio de Janeiro',
+    'site para pequena empresa',
+    'landing page profissional',
+    'criação de site para empresa',
+    'empresa de criação de sites',
+    'sistemas web personalizados',
+    'automação de processos',
+    'agência de criação de sites',
+    'criar site profissional',
+  ],
   authors: [{ name: 'Impulso Digital' }],
   robots: { index: true, follow: true },
   metadataBase: new URL('https://impulsodigital.dev.br'),
@@ -25,23 +39,23 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     siteName: 'Impulso Digital',
-    title: 'Impulso Digital | Tecnologia para Pequenos Negócios',
-    description: 'Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no crescimento e gestão do seu sonho.',
+    title: 'Criação de Sites e Sistemas para Empresas | Impulso Digital',
+    description: 'Agência digital no Rio de Janeiro especializada em sites profissionais e sistemas para pequenos negócios. Atendemos todo o Brasil.',
     url: 'https://impulsodigital.dev.br',
     images: [{
       url: '/og-image.png',
       width: 1200,
       height: 630,
-      alt: 'Impulso Digital - Tecnologia para Pequenos Negócios',
+      alt: 'Impulso Digital - Agência de Criação de Sites no Rio de Janeiro',
     }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Impulso Digital | Tecnologia para Pequenos Negócios',
-    description: 'Eliminamos a dor de cabeça tecnológica para pequenos empresários focarem no crescimento.',
+    title: 'Criação de Sites para Empresas | Impulso Digital — Rio de Janeiro',
+    description: 'Sites profissionais e sistemas para pequenos negócios. Baseados no Rio de Janeiro, atendemos todo o Brasil.',
     images: [{
       url: '/twitter-image.png',
-      alt: 'Impulso Digital - Tecnologia para Pequenos Negócios',
+      alt: 'Impulso Digital - Agência de Criação de Sites no Rio de Janeiro',
     }],
   },
   icons: {
@@ -60,11 +74,31 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
+  '@type': ['LocalBusiness', 'ProfessionalService'],
   name: 'Impulso Digital',
-  description: 'Soluções tecnológicas para pequenos negócios',
+  description: 'Agência de criação de sites e sistemas para pequenos negócios. Baseados no Rio de Janeiro, atendemos todo o Brasil de forma 100% online.',
   url: 'https://impulsodigital.dev.br',
   logo: 'https://impulsodigital.dev.br/logo.png',
+  image: 'https://impulsodigital.dev.br/og-image.png',
+  telephone: '+55-21-99233-4766',
+  address: {
+    '@type': 'PostalAddress',
+    addressLocality: 'Rio de Janeiro',
+    addressRegion: 'RJ',
+    addressCountry: 'BR',
+  },
+  areaServed: [
+    { '@type': 'State', name: 'Rio de Janeiro' },
+    { '@type': 'Country', name: 'Brasil' },
+  ],
+  serviceType: [
+    'Criação de Sites',
+    'Desenvolvimento Web',
+    'Landing Pages Profissionais',
+    'Sistemas Web Personalizados',
+    'Automação de Processos',
+  ],
+  priceRange: 'R$1.000 - R$1.500',
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '+55-21-99233-4766',
@@ -72,8 +106,55 @@ const jsonLd = {
     availableLanguage: 'Portuguese',
   },
   sameAs: [
-    'https://www.linkedin.com/company/impulsodigital',
-    'https://www.instagram.com/impulsodigital',
+    'https://www.linkedin.com/in/fabricioliveira-1/',
+    'https://www.instagram.com/impulsodigitaldev/',
+  ],
+}
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Quanto custa criar um site para empresa?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Na Impulso Digital, os preços variam de R$1.000 a R$1.500 dependendo da complexidade. Uma landing page profissional começa em R$1.000, e um site completo com até 5 páginas custa de R$1.300 a R$1.500. Sistemas personalizados são orçados sob consulta.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'O que é uma landing page e para que serve?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Uma landing page é uma página única e focada que apresenta seu serviço ou produto com o objetivo de converter visitantes em clientes. É ideal para pequenos negócios que querem uma presença profissional e eficiente na internet sem precisar de um site grande.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Preciso de site ou só o Instagram é suficiente?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'O Instagram é uma ferramenta importante, mas não substitui um site profissional. Um site aparece no Google, funciona 24 horas como um vendedor automático, transmite mais credibilidade e te dá controle total sobre sua presença digital — sem depender dos algoritmos das redes sociais.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'A Impulso Digital atende fora do Rio de Janeiro?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Sim! Somos uma agência digital sediada no Rio de Janeiro e atendemos clientes em todo o Brasil de forma 100% online. Todo o processo — do briefing à entrega — é feito remotamente com total transparência.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Quanto tempo leva para criar um site profissional?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'O prazo varia conforme o projeto. Uma landing page pode ser entregue em 7 a 14 dias. Um site completo com múltiplas páginas leva de 2 a 4 semanas. Sistemas personalizados têm prazo definido no orçamento.',
+      },
+    },
   ],
 }
 
@@ -90,6 +171,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
         {/* Oculta ícones até a fonte carregar para evitar flash de texto */}
         <script

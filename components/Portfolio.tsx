@@ -6,6 +6,7 @@ const cases = [
     name: 'CFTVK CrossFit',
     segment: 'Academia de CrossFit',
     image: '/images/portfolio-crossfit.webp',
+    alt: 'Site profissional para academia de CrossFit criado pela Impulso Digital — criação de site para academia no Rio de Janeiro',
     iconColor: 'text-orange-500',
     accentBorder: 'border-orange-200 dark:border-orange-800/50',
     problem: 'A academia não tinha presença online. Novos alunos chegavam apenas por indicação e não havia um lugar para apresentar a estrutura, horários e diferenciais.',
@@ -17,6 +18,7 @@ const cases = [
     name: 'Dr. Rafael Andrade',
     segment: 'Advogado Trabalhista',
     image: '/images/portfolio-advogado.webp',
+    alt: 'Landing page profissional para advogado trabalhista — desenvolvimento de site para escritório de advocacia pela Impulso Digital',
     iconColor: 'text-blue-500',
     accentBorder: 'border-blue-200 dark:border-blue-800/50',
     problem: 'Advogado com boa reputação mas sem presença digital. Clientes não entendiam as áreas de atuação e o contato era feito de forma improvisada.',
@@ -28,6 +30,7 @@ const cases = [
     name: 'Bella Forma Estética',
     segment: 'Clínica Estética',
     image: '/images/portfolio-clinica.webp',
+    alt: 'Site para clínica estética com galeria de resultados e agendamento via WhatsApp — criação de site para clínica pela Impulso Digital',
     iconColor: 'text-pink-500',
     accentBorder: 'border-pink-200 dark:border-pink-800/50',
     problem: 'Agendamentos feitos por WhatsApp geravam confusão, horários sobrepostos e clientes sem retorno adequado.',
@@ -39,6 +42,7 @@ const cases = [
     name: 'Doce Encanto',
     segment: 'Confeitaria Artesanal',
     image: '/images/portfolio-confeitaria.webp',
+    alt: 'Catálogo online para confeitaria artesanal com pedidos via WhatsApp — desenvolvimento de site para confeitaria pela Impulso Digital',
     iconColor: 'text-amber-500',
     accentBorder: 'border-amber-200 dark:border-amber-800/50',
     problem: 'Pedidos chegavam por DM no Instagram, mensagens se perdiam e clientes ficavam sem resposta na hora de encomendar.',
@@ -72,7 +76,7 @@ const Portfolio: React.FC = () => {
               <div className="relative h-48 overflow-hidden bg-gray-100 dark:bg-gray-800">
                 <Image
                   src={item.image}
-                  alt={`Screenshot do projeto ${item.name}`}
+                  alt={item.alt}
                   className="object-cover object-top transition-transform duration-500 hover:scale-105"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"

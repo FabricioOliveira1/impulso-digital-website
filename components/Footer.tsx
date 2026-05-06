@@ -19,9 +19,14 @@ const Footer: React.FC = () => {
           width={200}
           height={80}
         />
-        <p className="text-gray-500 dark:text-gray-400 text-sm text-center">
-          © 2026 Impulso Digital. Todos os direitos reservados.
-        </p>
+        <div className="text-center">
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
+            © 2026 Impulso Digital. Todos os direitos reservados.
+          </p>
+          <p className="text-gray-400 dark:text-gray-500 text-xs mt-1">
+            Rio de Janeiro, RJ · Atendimento online para todo o Brasil
+          </p>
+        </div>
         <div className="flex gap-6">
           <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="https://www.linkedin.com/in/fabricioliveira-1/">LinkedIn</a>
           <a className="text-gray-400 hover:text-primary dark:hover:text-primary transition-colors" href="https://www.instagram.com/impulsodigitaldev/">Instagram</a>
