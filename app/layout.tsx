@@ -11,7 +11,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
-  title: 'Criação de Sites para Empresas no Rio de Janeiro | Impulso Digital',
+  title: 'Criação de Sites, Landing Pages e Sistemas | Impulso Digital',
   description: 'Agência de criação de sites e sistemas para pequenos negócios no Rio de Janeiro. Landing pages, sites completos e automação de processos. Atendemos todo o Brasil. Solicite um orçamento.',
   keywords: [
     'criação de sites',
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'pt_BR',
     siteName: 'Impulso Digital',
-    title: 'Criação de Sites e Sistemas para Empresas | Impulso Digital',
+    title: 'Criação de Sites, Landing Pages e Sistemas | Impulso Digital',
     description: 'Agência digital no Rio de Janeiro especializada em sites profissionais e sistemas para pequenos negócios. Atendemos todo o Brasil.',
     url: 'https://impulsodigital.dev.br',
     images: [{
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Criação de Sites para Empresas | Impulso Digital — Rio de Janeiro',
+    title: 'Criação de Sites, Landing Pages e Sistemas | Impulso Digital',
     description: 'Sites profissionais e sistemas para pequenos negócios. Baseados no Rio de Janeiro, atendemos todo o Brasil.',
     images: [{
       url: '/twitter-image.png',
